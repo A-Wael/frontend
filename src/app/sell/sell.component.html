@@ -1,0 +1,35 @@
+
+  <mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h5>SELL A PRODUCT</h5>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form>
+    <mat-form-field >
+    <input [(ngModel)]="productData.productName" name="productName" matInput placeholder="Product Name">
+    </mat-form-field>
+    <br>
+    <mat-form-field >
+    <input [(ngModel)]="productData.startPrice" name="startPrice" matInput placeholder="Start Price">
+    </mat-form-field>
+    <br>
+    <mat-form-field >
+    <input [(ngModel)]="productData.minAddPrice" name="minAddPrice" matInput placeholder="Minimum Adding Price">
+    </mat-form-field>
+    <br>
+    <mat-form-field >
+    <input [(ngModel)]="productData.startDate" name="startDate" matInput placeholder="Choose Date">
+    </mat-form-field>
+    <br>
+    
+    <mat-form-field style="width:100%">
+    <textarea [(ngModel)]="productData.discription" name="description" matInput placeholder="description"> </textarea>
+    </mat-form-field>
+    <br>
+      <button (click)="post()" mat-raised-button color="primary">SELL IT</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+  

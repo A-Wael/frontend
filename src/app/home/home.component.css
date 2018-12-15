@@ -1,0 +1,32 @@
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .form-container .search-form {
+    display: flex;
+  }
+  
+  .search-form input {
+     flex-basis: 80%;
+      padding: 10px;
+      border: 1px solid #a7a7a7;
+  }
+  .search-form button {
+    flex: 1;
+    background: #0b7dda;
+    color: white;
+    border: none;
+    padding: 10px;
+  }
+  .content {
+    margin: 10px;
+    padding: 10px;
+    text-align: center ;
+    height: 329px;
+    width: 100% ;
+  
+  }
